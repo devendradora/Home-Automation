@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="toggle.css">
+
+</head>
+<body >
+<form action="glass.php" method="post">
+  <?php
+
+$host="localhost";
+$port=3306;
+$socket="";
+$user="root";
+$password="";
+$dbname="test";
+
+$con=new mysqli($host,$user,$password,$dbname,$port,$socket)
+or die('Could not connect to db server'.mysqli_connect_error());
+
+$query="select value from glass";
+$result=mysqli_query($con,$query);
+
+  ?>
+<ul>
+    <li>
+      <label for='chkbx' name="tubelight" value="Tube" >Tubelight</label>
+      <div class='togglebox'>
+        <input type='checkbox' id='chkbx' name="tube" value="1">
+        <label for='chkbx'><b></b></label>
+      </div>
+    </li>
+    <br><br>
+    <li>
+      <label for='chkbx2' name="Fans" value="Fan">Fan</label>
+      <div class='togglebox'>
+        <input type='checkbox' id='chkbx2' name="fan" value="1" >
+        <label for='chkbx2'><b></b></label>
+      </div>
+    </li>
+    <br><br>
+    <li>
+      <label for='chkbx3' name="Telev" value="TV">TV</label>
+      <div class='togglebox'>
+        <input type='checkbox' id='chkbx3' name="tv" value="1">
+        <label for='chkbx3'><b></b></label>
+      </div>
+    </li>
+    <br><br>
+    <li>
+      <label for='chkbx4' value="AirCon" value="AC">AC</label>
+      <div class='togglebox'>
+        <input type='checkbox' id='chkbx4' name="ac" value="1">
+        <label for='chkbx4'><b></b></label>
+      </div>
+    </li>
+</ul>
+<input type="submit"  style="position:absolute;margin-top:250px;margin-left:-200px;width:100px;height:40px; background-color:#220072;border-radius:10px;color:#fff">
+</form>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+  padding-bottom: 40px;
+  /*background:white url(../images/background/cream_pixels.png) repeat;*/
+  background-color: white;
+  padding-top: 40px;
+}
+.alert{
+  padding: 10px;
+}
+.form-signin {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-forgot {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+  font-family: 'raleway_regular';
+}
+.form-signin .form-control, .form-forgot .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"], .form-signin input[type="email"], .form-forgot input[type="email"]{
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin button[type="submit"]{
+  margin:20px 0;
+}
+.form-forgot button[type="submit"]{
+  margin:20px  0 0 0;
+}
+.font_raleway{
+  font-family: 'raleway_regular';
+}
+.form-signin a{
+  line-height: 2em;
+}
+
+#inputUserName-signin{
+  margin-bottom: -15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  /*padding: 10px;*/
+  height:50px;
+}
+#inputPassword-signin{
+ margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  /*padding: 10px;*/
+  height:50px;
+}
+.form-signup input{
+  margin-bottom: 3px;
+}
+@font-face {
+  font-family: 'raleway_regular';
+  src: url('../fonts/raleway-family-v2/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#center{
+  width:100%;
+  height:40%;
+  margin:50px auto 100px auto ;
+}
+#full_form{
+  width:100%;
+  margin-top: 30px;
+  height:10%;
+  padding:5px 0;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: arial;
+  text-align: center;
+  color:#2c3e50;
+}
+#institute_name{
+  width:500px;
+  letter-spacing: 1px;
+  height: 10%;
+  padding: 5px 0;
+  font-family: arial;
+  font-size: 18px;
+  text-align: center;
+  border-top: 1px solid silver;
+  color: #2980b9;
+}
+#main_name{
+  color:#34495e;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Blackout';
+}
+@font-face {
+  font-family: 'blackout';
+  src:url('../fonts/blackout/blackout_midnight-webfont.eot') format('eot'),
+  url('../fonts/blackout/blackout_midnight-webfont.woff') format('woff'),
+  url('../fonts/blackout/blackout_midnight-webfont.ttf') format('truetype'),
+  url('../fonts/blackout/blackout_midnight-webfont.svg') format('svg');
+}
+#loading-overlay {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  /* IE filter */
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+  -moz-opacity:0.9;    /* Mozilla extension */
+  -khtml-opacity:0.9;  /* Safari/Conqueror extension */
+  opacity: 0.9;
+}
+#loading-overlay img{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}

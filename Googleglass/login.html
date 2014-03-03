@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Authentication of credentials">
+<meta name="author" content="WSDC">
+<title>Log In</title>
+
+<head>
+    <title>Google Glass Login</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <style>
+        /* Small devices (tablets, 768px and up) */
+        @media (max-width: 962px) {
+            .col-xs-0 {
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+ <h1 align=center> <font  color="#235689">  Google Glass Home Automation</font></h1><br>
+    <br>
+    <br>
+    <div class="container" style="position:absolute;left:30%">
+        
+               
+            <div class="clearfix visible-xs"></div>
+            <div class="col-xs-12 col-lg-5">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#login" data-toggle="tab"><font color="green">Login</font></a></li>
+                    <li><a href="#signup" data-toggle="tab" ><font color="green">Create New Account</font></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="login">
+                        <br>
+                      +
+                        <form class="form" role="form" id="signin-form">
+                            <div class="form-group">
+                                <input  required type="text" id="inputUserName-signin" name="username" class="form-control" placeholder="Username" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input required type="password" id="inputPassword-signin" name="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="pull-left"><button class="btn btn-md btn-success "><a href="index.html" style="text-decoration:none">Login</a></button></div>
+                                <div class="pull-right"><a href="faculty/index.php" class="btn btn-md btn-success ">Administrator Login</a></div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <br>
+                            <div class="form-group">
+                                <a href="#" onclick="$('#forgot-form').toggleClass('hidden');" class="font_raleway"><font color="green">Forgot password/username of your account?</font></a>
+                            </div>
+                            <div class="form-group">
+                                <a href="#" onclick="$('#resend-form').toggleClass('hidden');" class="font_raleway"><font color="green">Resend activation link</font></a>
+                            </div>
+                        </form>
+
+                        <form class="form form-forgot hidden" id="forgot-form" >
+                            <div class="forn-group">
+                                <input required type="email" id="inputEmail-forgot" name="email" class="form-control" placeholder="Enter registered email id" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-md btn-block btn-warning " type="submit">Reset password</button>
+                            </div>
+                        </form>
+
+                        <form action="" class="form form-forgot hidden" id="resend-form">
+                            <br>
+                            <div class="form-group">
+                                <input required type="email" class="form-control" id="inputEmail-resend" placeholder="Enter registered email id" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn  btn-md btn-warning btn-block">Resend Activation Link</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="signup">
+                        <div class="alert" id="status-signup">
+
+                        </div>
+                        <br>
+
+                        <form action="" role="form" id="signup-form" class="form form-signup">
+                            <div class="form-group">
+                                <label for="inputName-signup" class="control-label">Name</label>
+
+                                <input required type="text" class="form-control" id="inputName-signup" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail-signup" class="control-label">Email</label>
+
+                                <input required type="email" class="form-control" id="inputEmail-signup" placeholder="dev@gmail.com">
+                               
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPhone-signup" class="control-label">Phone</label>
+
+                                <input required type="tel" class="form-control" id="inputPhone-signup" placeholder="7386080716">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="inputUserName-signup" class="control-label">Username</label>
+
+                                <input required type="text" class="form-control" id="inputUserName-signup" placeholder="eg: dev">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword-signup" class="control-label">Password</label>
+
+                                <input required type="password" class="form-control" id="inputPassword-signup" placeholder="">
+
+                            </div>
+                           
+                            </div>
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          
+
+    <!-- /container -->
+    <!-- Main Body Ends -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="toggle.css">
+</head>
+<body >
+
+  <h1 align=center> <font  color="#235689">  User Dashboard</font></h1><br><br><br><br>
+<form action="glass.php" method="post">
+<ul >
+    <li>
+      <label for='chkbx' name="tubelight" value="Tube" >Tubelight</label>
+      
+      <div class='togglebox'>
+        <input type='checkbox' id='chkbx' name="tube" value="1">
+        <label for='chkbx'><b></b></label>
+      </div>
+
+
+    </li>
+    <li>
+      <label for='chkbx2' name="Fans" value="Fan">Fan</label>
+      <div class='togglebox'>
+        <input type='checkbox' id='chkbx2' checked='false' name="fan" value="1">
+        <label for='chkbx2'><b></b></label>
+      </div>
+    </li>
+    <li>
+      <label for='chkbx3' name="Telev" value="TV">TV</label>
+      <div class='togglebox'>
+        <input type='checkbox' id='chkbx3' checked='false' name="tv" value="1">
+        <label for='chkbx3'><b></b></label>
+      </div>
+    </li>
+    <li>
+      <label for='chkbx4' value="AirCon" value="AC">AC</label>
+      <div class='togglebox'>
+        <input type='checkbox' id='chkbx4' checked='false' name="ac" value="1">
+        <label for='chkbx4'><b></b></label>
+      </div>
+    </li>
+</ul>
+<input type="submit" style="position:absolute;margin-top:200px;margin-left:-200px;width:100px;height:40px; background-color:cyan">
+</form>
+</body>
+</html>
